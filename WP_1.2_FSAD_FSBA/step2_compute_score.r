@@ -90,6 +90,8 @@ detectOutliers <- function(x, featureLabels) {
 
 }
 
+dir.create("scores")
+
 #########################################################################################
 ## FSAD
 #########################################################################################
@@ -146,9 +148,9 @@ x$isOutlier <- as.numeric((1:nrow(x)) %in% detectOutliers(x, fsba$featureLabels)
 
 # predict ba scores
 x$FSBA <- rep(NA, nrow(x))
-x$FSBA[covars$Sex==1] <- as.matrix(x[covars$Sex==1,featureLabels]) %*% fsba$modelMale[featureLabels] +
+x$FSBA[covars$Sex==1] <- as.matrix(x[covars$Sex==1,fsba$featureLabels]) %*% fsba$modelMale[fsba$featureLabels] +
 		fsba$modelMale["(Intercept)"]
-x$FSBA[covars$Sex==2] <- as.matrix(x[covars$Sex==2,featureLabels]) %*% fsba$modelFemale[featureLabels] +
+x$FSBA[covars$Sex==2] <- as.matrix(x[covars$Sex==2,fsba$featureLabels]) %*% fsba$modelFemale[fsba$featureLabels] +
 		fsba$modelFemale["(Intercept)"]
 
 # save it

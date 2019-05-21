@@ -12,7 +12,7 @@
 
 
 # directory containing freesurfer data
-export SUBJECTS_DIR='/home/frenzels/Daten/SHIP/t0_fs53'
+export SUBJECTS_DIR='???'
 
 # CSV with the first column containing the subject ids, the second column containing
 # chronologcial age, and the third column containing sex (2=female, 1=male). The first
@@ -33,6 +33,7 @@ export COV_FILE='covariates.csv'
 || ( echo 'The covariate file you specified does not exist!'
      exit )
 
+mkdir -p data
 
 # build list of subjects from $COV_FILE
 subj_list=""
