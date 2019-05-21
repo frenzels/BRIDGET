@@ -2,8 +2,7 @@
 
 JPND-BRIDGET Working Package 1.2
 
-S. Frenzel, University Medicine Greifswald, frenzels@uni-greifswald.de
-23/05/19
+S. Frenzel, University Medicine Greifswald, frenzels@uni-greifswald.de, 23/05/19
 
 ## Calculation of Freesurfer-based Alzheimer's disease score and brain age score
 
@@ -89,16 +88,16 @@ Covariates
 - Intracranial volume (ICV) as estimated by Freesurfer
 - _Optional:_ cohort specific covariates (principal components for population stratification, MR scanner, ...)
 
-GWA Analysis
+GWA Analyses
 - Genotype-phenotype association using an additive genetic model, taking genotype uncertainties of imputed SNPs into account
 - Linear regressions of FSAD and FSBA 
 - Models:
-    1. FSAD ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + **SNP**
-    2. Same as 1. but only cases with Age < 60
-    3. Same as 1. but only cases with Age > 60
-    4. FSBA ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + **SNP**
-    5. FSAD ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + SNP + **SNP\*Age**
-    6. FSBA ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + SNP + **SNP\*Age**
+  1. FSAD ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + **SNP**
+  2. Same as 1. but only cases with Age < 60
+  3. Same as 1. but only cases with Age > 60
+  4. FSBA ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + **SNP**
+  5. FSAD ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + SNP + **SNP\*Age**
+  6. FSBA ~ Age + Age² + Sex + Age\*Sex + ICV + _cohort_specifc_covariates_ + SNP + **SNP\*Age**
 
 Data exchange format and result file upload
 - Please do not remove any SNPs after GWAS e.g. based on MAF or imputation quality. This will be done centrally.
