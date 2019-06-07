@@ -74,8 +74,7 @@ Exclusion criteria:
 - Morphological abnormalities (e.g. cysts, brain tumors etc.)
 - Stroke (including lacunes)
 - Brain surgery
-- Parkinson
-- Epilepsy
+- Epilepsy before 30 years of age
 - Multiple sclerosis
 
 Genotypes
