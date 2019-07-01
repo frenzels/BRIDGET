@@ -78,7 +78,7 @@ Exclusion criteria:
 - Multiple sclerosis
 
 Genotypes
- - genome-wide data imputed to the **HRC 1.1 panel** or **1000 Genomes, phase 1 version 3 (march 2012) ALL populations reference panel
+ - genome-wide data imputed to the **HRC 1.1** panel or **1000 Genomes, phase 1 version 3 (march 2012) ALL populations** reference panel
  - imputed X chromosome included – **male alleles coded as 0/2, female 0/1/2**
 
 Covariates
