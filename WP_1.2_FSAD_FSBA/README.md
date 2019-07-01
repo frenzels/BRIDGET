@@ -72,7 +72,7 @@ Endpoints (dependent variables):
 Exclusion criteria: 
 - _Recommended:_ outliers as defined by the isOutlier variable in _./scores/fsad.csv_ and _./scores/fsba.csv_, respectively
 - Morphological abnormalities (e.g. cysts, brain tumors etc.)
-- Stroke (including lacunes)
+- Stroke
 - Brain surgery
 - Epilepsy before 30 years of age
 - Multiple sclerosis
